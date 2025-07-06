@@ -1,20 +1,19 @@
-const countlabel = document.getElementById("count")
-let count = 0
+const input = document.querySelector("#input")
 
-function get(){
-    count++
-    countlabel.textContent = count
-    
+
+function display(callback){
+    input.value += callback
 }
 
-function be(){
-    count--
-    countlabel.textContent = count
-    
+function calculate(){
+    try{
+        input.value = eval(input.value)
+    }catch(error){
+        input.value = "error"
+
+    }
 }
 
-function me(){
-    count = 0
-    countlabel.textContent = count
-    
+function wipe(){
+    input.value = ""
 }

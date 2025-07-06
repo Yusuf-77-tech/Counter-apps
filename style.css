@@ -1,26 +1,35 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
-  margin-top: 100px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
-  background: white;
-  display: inline-block;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
 }
 
-h2 {
-  font-size: 48px;
-  margin: 20px 0;
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+
 }
 
-button {
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
+h1{
+    color: wheat;
+}
+
+input{
+    width: 100%;
+    padding: 20px;
+
+
+}
+
+button{
+    padding: 20px;
+    border-radius: 10px;
 }
